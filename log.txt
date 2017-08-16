@@ -1,0 +1,71 @@
+make -C lib FLOAT_TYPE=soft
+make[1]: Entrando no diretório `/home/igor/workspace/stm32f4_playback/lib'
+make -C StdPeriph FLOAT_TYPE=soft
+make[2]: Entrando no diretório `/home/igor/workspace/stm32f4_playback/lib/StdPeriph'
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o misc.o src/misc.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_dma.o src/stm32f4xx_dma.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_rcc.o src/stm32f4xx_rcc.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_adc.o src/stm32f4xx_adc.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_exti.o src/stm32f4xx_exti.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_rng.o src/stm32f4xx_rng.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_can.o src/stm32f4xx_can.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_flash.o src/stm32f4xx_flash.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_rtc.o src/stm32f4xx_rtc.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_crc.o src/stm32f4xx_crc.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_fsmc.o src/stm32f4xx_fsmc.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_sdio.o src/stm32f4xx_sdio.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_cryp_aes.o src/stm32f4xx_cryp_aes.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_gpio.o src/stm32f4xx_gpio.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_spi.o src/stm32f4xx_spi.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_cryp.o src/stm32f4xx_cryp.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_hash.o src/stm32f4xx_hash.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_syscfg.o src/stm32f4xx_syscfg.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_cryp_des.o src/stm32f4xx_cryp_des.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_hash_md5.o src/stm32f4xx_hash_md5.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_tim.o src/stm32f4xx_tim.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_cryp_tdes.o src/stm32f4xx_cryp_tdes.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_hash_sha1.o src/stm32f4xx_hash_sha1.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_usart.o src/stm32f4xx_usart.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_dac.o src/stm32f4xx_dac.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_i2c.o src/stm32f4xx_i2c.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_wwdg.o src/stm32f4xx_wwdg.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_dbgmcu.o src/stm32f4xx_dbgmcu.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_iwdg.o src/stm32f4xx_iwdg.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_dcmi.o src/stm32f4xx_dcmi.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -c -o stm32f4xx_pwr.o src/stm32f4xx_pwr.c
+~/sat/bin/arm-none-eabi-ar -r libstdperiph.a misc.o stm32f4xx_dma.o stm32f4xx_rcc.o stm32f4xx_adc.o stm32f4xx_exti.o stm32f4xx_rng.o stm32f4xx_can.o stm32f4xx_flash.o stm32f4xx_rtc.o stm32f4xx_crc.o stm32f4xx_fsmc.o stm32f4xx_sdio.o stm32f4xx_cryp_aes.o stm32f4xx_gpio.o stm32f4xx_spi.o stm32f4xx_cryp.o stm32f4xx_hash.o stm32f4xx_syscfg.o stm32f4xx_cryp_des.o stm32f4xx_hash_md5.o stm32f4xx_tim.o stm32f4xx_cryp_tdes.o stm32f4xx_hash_sha1.o stm32f4xx_usart.o stm32f4xx_dac.o stm32f4xx_i2c.o stm32f4xx_wwdg.o stm32f4xx_dbgmcu.o stm32f4xx_iwdg.o stm32f4xx_dcmi.o stm32f4xx_pwr.o
+make[2]: Saindo do diretório `/home/igor/workspace/stm32f4_playback/lib/StdPeriph'
+make -C USB_OTG FLOAT_TYPE=soft
+make[2]: Entrando no diretório `/home/igor/workspace/stm32f4_playback/lib/USB_OTG'
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -I../Conf -c -o usb_core.o src/usb_core.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -I../Conf -c -o usb_dcd.o src/usb_dcd.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -I../Conf -c -o usb_dcd_int.o src/usb_dcd_int.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -I../Conf -c -o usb_hcd.o src/usb_hcd.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -I../Conf -c -o usb_hcd_int.o src/usb_hcd_int.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../Core/cmsis -I../Core/stm32 -I../Conf -c -o usb_otg.o src/usb_otg.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-ar -r libusbcore.a usb_core.o usb_dcd.o usb_dcd_int.o usb_hcd.o usb_hcd_int.o usb_otg.o
+make[2]: Saindo do diretório `/home/igor/workspace/stm32f4_playback/lib/USB_OTG'
+make -C USB_Host/Core FLOAT_TYPE=soft
+make[2]: Entrando no diretório `/home/igor/workspace/stm32f4_playback/lib/USB_Host/Core'
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../../Core/cmsis -I../../Core/stm32 -I../../Conf -I../../USB_OTG/inc -c -o usbh_core.o src/usbh_core.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../../Core/cmsis -I../../Core/stm32 -I../../Conf -I../../USB_OTG/inc -c -o usbh_hcs.o src/usbh_hcs.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../../Core/cmsis -I../../Core/stm32 -I../../Conf -I../../USB_OTG/inc -c -o usbh_ioreq.o src/usbh_ioreq.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../../Core/cmsis -I../../Core/stm32 -I../../Conf -I../../USB_OTG/inc -c -o usbh_stdreq.o src/usbh_stdreq.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-ar -r libusbhostcore.a usbh_core.o usbh_hcs.o usbh_ioreq.o usbh_stdreq.o
+make[2]: Saindo do diretório `/home/igor/workspace/stm32f4_playback/lib/USB_Host/Core'
+make -C USB_Host/Class/MSC FLOAT_TYPE=soft
+make[2]: Entrando no diretório `/home/igor/workspace/stm32f4_playback/lib/USB_Host/Class/MSC'
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../../../Core/cmsis -I../../../Core/stm32 -I../../../Conf -I../../../USB_OTG/inc -I../../Core/inc -I../../../fat_fs/inc -c -o usbh_msc_bot.o src/usbh_msc_bot.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../../../Core/cmsis -I../../../Core/stm32 -I../../../Conf -I../../../USB_OTG/inc -I../../Core/inc -I../../../fat_fs/inc -c -o usbh_msc_core.o src/usbh_msc_core.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../../../Core/cmsis -I../../../Core/stm32 -I../../../Conf -I../../../USB_OTG/inc -I../../Core/inc -I../../../fat_fs/inc -c -o usbh_msc_fatfs.o src/usbh_msc_fatfs.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -Iinc -I../../../Core/cmsis -I../../../Core/stm32 -I../../../Conf -I../../../USB_OTG/inc -I../../Core/inc -I../../../fat_fs/inc -c -o usbh_msc_scsi.o src/usbh_msc_scsi.c
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-ar -r libusbhostmsc.a usbh_msc_bot.o usbh_msc_core.o usbh_msc_fatfs.o usbh_msc_scsi.o
+make[2]: Saindo do diretório `/home/igor/workspace/stm32f4_playback/lib/USB_Host/Class/MSC'
+make -C fat_fs FLOAT_TYPE=soft
+make[2]: Entrando no diretório `/home/igor/workspace/stm32f4_playback/lib/fat_fs'
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -I../Core/cmsis -I../Core/stm32 -Iinc -I../Conf -c -o ff.o src/ff.c
+~/sat/bin/arm-none-eabi-gcc -g -O2 -Wall -mlittle-endian -mthumb -mthumb-interwork -mcpu=cortex-m4 -msoft-float -ffreestanding -nostdlib -I../Core/cmsis -I../Core/stm32 -Iinc -I../Conf -c -o fattime.o src/fattime.c
+~/sat/bin/arm-none-eabi-ar -r libfatfs.a ff.o fattime.o
+make[2]: Saindo do diretório `/home/igor/workspace/stm32f4_playback/lib/fat_fs'
+make[1]: Saindo do diretório `/home/igor/workspace/stm32f4_playback/lib'
+/opt/toolchains/eabi/arm-2014.05/bin//arm-none-eabi-gcc -std=gnu99 -g -O2 -Wall -Tstm32_flash.ld -mlittle-endian -mthumb -mthumb-interwork -nostartfiles -mcpu=cortex-m4 -msoft-float -Iinc -Ilib/Core/cmsis -Ilib/Core/stm32 -Ilib/Conf -Ilib/StdPeriph/inc -Ilib/USB_OTG/inc -Ilib/USB_Host/Core/inc -Ilib/USB_Host/Class/MSC/inc -Ilib/fat_fs/inc src/main.c src/stm32f4xx_it.c src/waveplayer.c src/waverecorder.c src/stm32f4_discovery_audio_codec.c src/stm32f4_discovery.c src/stm32f4_discovery_lis302dl.c src/system_stm32f4xx.c src/usb_bsp.c src/usbh_usr.c lib/startup_stm32f4xx.s -o build/stm32f4_playback.elf -Llib/StdPeriph -Llib/USB_Host/Core -Llib/USB_Host/Class/MSC/ -Llib/USB_OTG -Llib/fat_fs -lm -lstdperiph -lusbhostcore -lusbhostmsc -lusbcore -lfatfs
